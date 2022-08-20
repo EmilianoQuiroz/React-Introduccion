@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import { Greeting, UserCard } from "./Greeting";
 import Product from "./Product";
 
-
 // const rootElement = document.getElementById('root')
 // ReactDOM.createRoot(rootElement)
 //Equivake a..
@@ -14,10 +13,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 /*Son funciones que devuelven una porcion de interfaz*/
 /*Los elementos siempre deben tener un elemento padre para ser llamados*/
 // function Greeting() {
-  // return <div>
-  //         <h1>Primer componente en react </h1>
-  //         <p>Lorem ipsum dolor sit amet, consectetur adip</p>
-  //         </div>
+// return <div>
+//         <h1>Primer componente en react </h1>
+//         <p>Lorem ipsum dolor sit amet, consectetur adip</p>
+//         </div>
 //   const user = {
 //     primerNombre: "Santiago",
 //     apellidoQuiroz: "Quiroz",
@@ -29,7 +28,13 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 /*Estas etiquetas pueden ser de autocerrado */
 root.render(
   <>
-    <UserCard name="Ryan Ray" amount="{3000}" married={true} points={[99, 33.3, 22.2]}/>
+    <UserCard
+      name="Ryan Ray"
+      amount="3000"
+      married={true}
+      points={[99, 33.3, 22.2]}
+      adress={{ street: "Calle falsa 123", City: "Buenos Aires" }}
+    />
   </>
 );
 
