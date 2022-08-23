@@ -1,0 +1,3 @@
+/*
+Son funciones que react nos provee para agregar mas funcionalidades a nuestra aplicacion.
+*/
